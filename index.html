@@ -17,7 +17,14 @@
           <label for="weight">Weight:</label>
           <input type="text" id="weight" placeholder="in kg"/>
         </div>
-        <button>Calculate</button>
+        <div class="button-container">
+          <button class="clear-btn">Clear</button>
+          <button class="calculate-btn">Calculate</button>
+        </div>
+      </div>
+      <div class="result-container">
+        <p>BMI: <span class="bmi-display"></span></p>
+        <p class="remarks"></p>
       </div>
     </main>
     <script src="./app.js"></script>
