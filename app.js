@@ -4,7 +4,7 @@ const weightValue = document.getElementById('weight');
 const clearButton = document.querySelector('.clear-btn');
 const calculateButton = document.querySelector('.calculate-btn');
 
-const resultContainer = document.querySelector('.result-container');
+const mainContainer = document.querySelector('main');
 const bmiDisplay = document.querySelector('.bmi-display');
 const bmiCategory = document.querySelector('.bmi-category');
 
@@ -57,7 +57,7 @@ clearButton.addEventListener('click', () => {
     bmiDisplay.textContent = '';
     bmiCategory.textContent = '';
 
-    resultContainer.classList.remove('show-result');
+    mainContainer.classList.remove('show-result');
 });
 
 calculateButton.addEventListener('click', () => {
@@ -74,5 +74,5 @@ calculateButton.addEventListener('click', () => {
     bmiCategory.textContent = bmiCategories[getCategoryIndex(bmiVal)];
     bmiCategory.style.color = bmiColors[getCategoryIndex(bmiVal)];
 
-    resultContainer.classList.add('show-result');
+    mainContainer.classList.add('show-result');
 });
